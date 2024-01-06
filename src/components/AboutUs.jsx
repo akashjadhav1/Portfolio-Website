@@ -15,12 +15,16 @@ function AboutUs() {
         </div>
         <div className="flex justify-center items-center lg:w-3/4  mx-1">
           <h1 className="m-4 lg:mx-10 text-xl lg:text-3xl text-gray-400 font-serif">
-            <span className="text-orange-500 font-bold font-serif">WEB DEVELOPER</span>
+            <span className="text-orange-500 font-bold font-serif">
+              WEB DEVELOPER
+            </span>
             <br />
-            As an enthusiastic newcomer to the world of web design, I am eager
-            to apply my passion and creativity to craft visually stunning and
-            responsive websites. My goal is to ensure the highest level of
-            client satisfaction in every project I undertake.
+            Results-driven Full Stack Web Developer with a strong foundation in
+            frontend and backend technologies. Proven ability to deliver
+            high-quality solutions from concept to deployment. Collaborative
+            team player with expertise in responsive design, RESTful APIs, and
+            database management. Eager to contribute technical proficiency and
+            creativity to a dynamic development team.
           </h1>
         </div>
       </div>
