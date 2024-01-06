@@ -9,7 +9,7 @@ function AboutUs() {
           About Us
         </h1>
       </div>
-      <div className="lg:flex lg:justify-around">
+      <div className="lg:flex lg:justify-around md:flex ">
         <div className="mx-2 lg:w-1/2">
           <img src="/images/aboutUs.png" className="" alt="AboutImg" />
         </div>

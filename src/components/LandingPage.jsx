@@ -22,16 +22,16 @@ function LandingPage() {
   return (
     <>
     
-    <div className='bg1 flex flex-col items-center lg:flex-row justify-around lg:px-28 p-5' id='home'>
+    <div className='bg1 flex flex-col items-center lg:flex-row md:flex-row md:px-28 justify-around lg:px-28 p-5' id='home'>
      
-      <div className='rounded-full ring-2 ring-purple-400 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-800 lg:w-60 w-48 mt-24 lg:mt-12 lg:mx-32 mb-5 lg:mb-0 transform transition-transform hover:scale-110 duration-1000 ease-in-out'>
-        <img src="/images/profile.jpg" alt="profile" className='rounded-full shadow-sky-500 shadow-2xl lg:w-80' />
+      <div className='rounded-full ring-2 ring-purple-400 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-800 lg:w-60 md:w-60 w-48 mt-24 lg:mt-12 md:mt-12 lg:mx-32 md:mx-32 mb-5 lg:mb-0 md:mb-0 transform transition-transform hover:scale-110 duration-1000 ease-in-out'>
+        <img src="/images/profile.jpg" alt="profile" className='rounded-full shadow-sky-500 shadow-2xl lg:w-80 md:w-80' />
       </div>
 
-      <div className='text-center lg:text-left lg:w-1/2'>
-        <h1 className='lg:text-7xl text-3xl lg:mt-5 text-green-400 font-bold'>HELLO</h1>
-        <h1 className='lg:text-2xl text-gray-600 mt-2'>IT'S ME</h1>
-        <h1 className='lg:text-3xl text-fuchsia-800 mt-2 font-bold  '>AKASH JADHAV</h1>
+      <div className='text-center lg:text-left md:text-left lg:w-1/2 lg:w-1/2'>
+        <h1 className='lg:text-7xl md:text-7xl text-3xl lg:mt-5 md:mt-5 text-green-400 font-bold'>HELLO</h1>
+        <h1 className='lg:text-2xl md:text-2xl text-gray-600 mt-2'>IT'S ME</h1>
+        <h1 className='lg:text-3xl md:text-3xl text-fuchsia-800 mt-2 font-bold  '>AKASH JADHAV</h1>
 
         <div className='mt-5'>
           <h1 className='text-3xl text-gray-600'>I am</h1>

@@ -7,3 +7,10 @@ body{
     background-size: cover;
     height: 750px;
 }
+@media only screen and (max-width: 600px) {
+    .bg1{
+        background-image: url(".././public/images/bg2.jpg");
+        background-position:50%;
+        height: 750px;
+    }
+  }
