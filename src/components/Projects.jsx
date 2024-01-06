@@ -14,7 +14,7 @@ function Projects() {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Crypto Dashboard</div>
-            <p className="text-gray-500 text-base">
+            <p className="text-gray-500 text-base font-serif">
             Digital assets secured by cryptography, decentralized on blockchain. Bitcoin, Ethereum, altcoins revolutionize finance. Transparent, borderless transactions. High volatility, potential for innovation, and disruption.
             </p>
           </div>
@@ -46,7 +46,7 @@ function Projects() {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Book My Show</div>
-            <p className="text-gray-500 text-base">
+            <p className="text-gray-500 text-base font-serif">
             Online platform for movie, event, and show bookings. User-friendly interface, diverse options, secure transactions. Ultimate entertainment booking experience.
             </p>
           </div>
@@ -84,7 +84,7 @@ function Projects() {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Disney Star</div>
-            <p className="text-gray-500 text-base">
+            <p className="text-gray-500 text-base font-serif">
             A streaming app by Disney, offering a vast library of movies and series from various genres. Enhanced content, family-friendly, and exclusive originals, providing immersive entertainment.
             </p>
           </div>

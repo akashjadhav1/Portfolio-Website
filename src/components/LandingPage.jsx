@@ -29,13 +29,13 @@ function LandingPage() {
       </div>
 
       <div className='text-center lg:text-left md:text-left lg:w-1/2 lg:w-1/2'>
-        <h1 className='lg:text-7xl md:text-7xl text-3xl lg:mt-5 md:mt-5 text-green-400 font-bold'>HELLO</h1>
+        <h1 className='lg:text-7xl md:text-7xl text-6xl lg:mt-5 md:mt-5 text-green-400 font-semibold'>HELLO</h1>
         <h1 className='lg:text-2xl md:text-2xl text-gray-600 mt-2'>IT'S ME</h1>
         <h1 className='lg:text-3xl md:text-3xl text-fuchsia-800 mt-2 font-bold  '>AKASH JADHAV</h1>
 
         <div className='mt-5'>
           <h1 className='text-3xl text-gray-600'>I AM</h1>
-          <h1 className='text-3xl text-orange-400 mt-2 typed-text font-bold'></h1>
+          <h1 className='text-2xl text-orange-400 mt-2 typed-text font-bold'></h1>
         </div>
 
         <div className='flex pt-20'>

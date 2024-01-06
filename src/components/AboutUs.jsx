@@ -14,8 +14,8 @@ function AboutUs() {
           <img src="/images/aboutUs.png" className="" alt="AboutImg" />
         </div>
         <div className="flex justify-center items-center lg:w-3/4  mx-1">
-          <h1 className="m-4 lg:mx-10 text-xl lg:text-3xl text-gray-400">
-            <span className="text-orange-500 font-bold">WEB DEVELOPER</span>
+          <h1 className="m-4 lg:mx-10 text-xl lg:text-3xl text-gray-400 font-serif">
+            <span className="text-orange-500 font-bold font-serif">WEB DEVELOPER</span>
             <br />
             As an enthusiastic newcomer to the world of web design, I am eager
             to apply my passion and creativity to craft visually stunning and
@@ -33,8 +33,8 @@ function AboutUs() {
             alt="Web Development"
             className="md:w-1/4 rounded-2xl mb-5 shadow-xl shadow-orange-200 transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
-          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
-            <span className="text-2xl font-bold text-orange-300">
+          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif">
+            <span className="text-2xl font-bold text-orange-300 ">
               WEB DEVELOPMENT
             </span>
             <br />
@@ -49,7 +49,7 @@ function AboutUs() {
         <hr className="my-5" />
 
         <div className="flex flex-col md:flex-row justify-around mt-10 items-center">
-          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
+          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif">
             <span className="text-2xl font-bold text-green-300">
               GAME DEVELOPMENT
             </span>
@@ -75,7 +75,7 @@ function AboutUs() {
             alt="Artificial Intelligence"
             className="md:w-1/4 rounded-2xl mb-5 shadow-blue-400 shadow-xl transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
-          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
+          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif">
             <span className="text-2xl font-bold text-blue-300">
               ARTIFICIAL INTELLIGENCE
             </span>
