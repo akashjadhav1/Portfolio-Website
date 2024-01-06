@@ -57,7 +57,7 @@ const Navbar = () => {
         }`}
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">AJ</h1>
+        <img src="/images/ajlogo2.png" alt="aj logo" className="w-24 h-24" />
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
