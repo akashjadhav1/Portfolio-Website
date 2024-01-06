@@ -26,15 +26,15 @@ function AboutUs() {
       </div>
       <hr className="" />
 
-      <div class="mt-5">
-        <div class="flex flex-col md:flex-row justify-around mt-5 items-center">
+      <div className="mt-5">
+        <div className="flex flex-col md:flex-row justify-around mt-5 items-center">
           <img
             src="/images/webDevelopment.jpg"
             alt="Web Development"
-            class="md:w-1/4 rounded-2xl mb-5 shadow-xl shadow-orange-200"
+            className="md:w-1/4 rounded-2xl mb-5 shadow-xl shadow-orange-200"
           />
-          <p class="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
-            <span class="text-2xl font-bold text-orange-300">
+          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
+            <span className="text-2xl font-bold text-orange-300">
               WEB DEVELOPMENT
             </span>
             <br />
@@ -46,11 +46,11 @@ function AboutUs() {
             and dynamic online experiences across various devices.
           </p>
         </div>
-        <hr class="my-5" />
+        <hr className="my-5" />
 
-        <div class="flex flex-col md:flex-row justify-around mt-10 items-center">
-          <p class="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
-            <span class="text-2xl font-bold text-green-300">
+        <div className="flex flex-col md:flex-row justify-around mt-10 items-center">
+          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
+            <span className="text-2xl font-bold text-green-300">
               GAME DEVELOPMENT
             </span>
             <br />
@@ -64,19 +64,19 @@ function AboutUs() {
           <img
             src="/images/gameDevelopment.jpg"
             alt="Game Development"
-            class="md:w-1/4 rounded-2xl mb-5 shadow-purple-500 shadow-xl"
+            className="md:w-1/4 rounded-2xl mb-5 shadow-purple-500 shadow-xl"
           />
         </div>
-        <hr class="my-5" />
+        <hr className="my-5" />
 
-        <div class="flex flex-col md:flex-row justify-around mt-10 items-center">
+        <div className="flex flex-col md:flex-row justify-around mt-10 items-center">
           <img
             src="/images/ai.jpg"
             alt="Artificial Intelligence"
-            class="md:w-1/4 rounded-2xl mb-5 shadow-blue-400 shadow-xl"
+            className="md:w-1/4 rounded-2xl mb-5 shadow-blue-400 shadow-xl"
           />
-          <p class="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
-            <span class="text-2xl font-bold text-blue-300">
+          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
+            <span className="text-2xl font-bold text-blue-300">
               ARTIFICIAL INTELLIGENCE
             </span>
             <br />
