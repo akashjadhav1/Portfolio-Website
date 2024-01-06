@@ -64,10 +64,18 @@ function TechSkill() {
         </div>
 
         <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
-          <h1 className="text-xl font-bold text-center mt-4 p-3 text-center text-purple-400">Database</h1>
+          <h1 className="text-xl font-bold text-center mt-4 p-3 text-center text-purple-400">Backend</h1>
+          <div className="flex justify-center mt-5 mx-3 mb-3">
+            <img src="/images/nodejs.png" className="w-12 md:px-2 bg-gray-100 rounded-lg" alt="MongoDB" />
+            <p className="mx-5 mt-1 font-bold text-gray-500">Node Js</p>
+          </div>
+          <div className="flex justify-center mt-5 mx-3 mb-2">
+            <img src="/images/expressjs.png" className="w-12 md:px-2 bg-gray-100 rounded-lg" alt="MongoDB" />
+            <p className="mx-3 mt-2 font-bold text-gray-500 ">Express Js</p>
+          </div>
           <div className="flex justify-center mt-5 mx-3 mb-3">
             <img src="/images/mongodb.png" className="w-12 md:px-2" alt="MongoDB" />
-            <p className="mx-5 mt-3 font-bold text-gray-500">MongoDB</p>
+            <p className="mx-3 mt-3 font-bold text-gray-500">MongoDB</p>
           </div>
         </div>
 

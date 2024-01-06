@@ -69,6 +69,12 @@ function WebSlider() {
           <div className='mt-4 mx-4'>
           <img src="/images/github.png" className='w-36 bg-white rounded pt-3 shadow-indigo-700 shadow-2xl' alt="github" />
           </div>
+          <div className='mt-4 mx-4'>
+          <img src="/images/nodejs.png" className='w-36 bg-white rounded mt-10 shadow-indigo-700 shadow-2xl' alt="nodejs" />
+          </div>
+          <div className='mt-4 mx-4'>
+          <img src="/images/expressjs.png" className='w-36 bg-white rounded mt-10 shadow-indigo-700 shadow-2xl' alt="expressjs" />
+          </div>
         </Slider>
         </div>
         </>
