@@ -31,7 +31,7 @@ function AboutUs() {
           <img
             src="/images/webDevelopment.jpg"
             alt="Web Development"
-            className="md:w-1/4 rounded-2xl mb-5 shadow-xl shadow-orange-200"
+            className="md:w-1/4 rounded-2xl mb-5 shadow-xl shadow-orange-200 transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
           <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
             <span className="text-2xl font-bold text-orange-300">
@@ -64,7 +64,7 @@ function AboutUs() {
           <img
             src="/images/gameDevelopment.jpg"
             alt="Game Development"
-            className="md:w-1/4 rounded-2xl mb-5 shadow-purple-500 shadow-xl"
+            className="md:w-1/4 rounded-2xl mb-5 shadow-purple-500 shadow-xl transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
         </div>
         <hr className="my-5" />
@@ -73,7 +73,7 @@ function AboutUs() {
           <img
             src="/images/ai.jpg"
             alt="Artificial Intelligence"
-            className="md:w-1/4 rounded-2xl mb-5 shadow-blue-400 shadow-xl"
+            className="md:w-1/4 rounded-2xl mb-5 shadow-blue-400 shadow-xl transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
           <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left">
             <span className="text-2xl font-bold text-blue-300">
