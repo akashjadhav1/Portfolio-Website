@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <div className={`fixed top-0 w-full z-50 ${nav ? 'bg-[#000300]' : ''}`}>
-      <div className="bg-gradient-to-r from-violet-400 to-fuchsia-700 flex justify-between items-center h-24 max-w-[1275px] mx-auto px-4 text-white">
+      <div className="bg-gradient-to-r from-black to-fuchsia-700 flex justify-between items-center h-24 max-w-[1275px] mx-auto px-4 text-white">
         {/* Logo */}
-        <h1 className="w-full text-3xl font-bold">AJ</h1>
+        <img src="/images/ajlogo2.png" alt="aj logo" className="w-24 h-24" />
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex">

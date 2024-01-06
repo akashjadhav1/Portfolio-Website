@@ -7,7 +7,7 @@ function TechSkill() {
         <h1 className="text-3xl font-bold text-center mb-5 text-sky-500" id="techskills">TECH SKILLS</h1>
       </div>
       <div className="flex flex-col sm:flex-row justify-around ">
-        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-600 shadow-2xl m-5">
+        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-600 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
           <h1 className="text-xl font-bold mt-4 p-3 text-center text-orange-300">Scripting Languages</h1>
           <div className="flex justify-center mt-5">
             <img src="/images/html.png" alt="HTML" className="w-10" />
@@ -31,7 +31,7 @@ function TechSkill() {
           </div>
         </div>
 
-        <div className="border mb-5 sm:mb-0 sm:mr-5 p-5 rounded-xl shadow-sky-500 shadow-2xl m-5">
+        <div className="border mb-5 sm:mb-0 sm:mr-5 p-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
           <h1 className="text-xl font-bold p-2 text-center text-green-200">Frameworks</h1>
           <div className="flex justify-center mt-5">
             <img src="/images/bootstrap.png" className="w-9" alt="Bootstrap" />
@@ -47,7 +47,7 @@ function TechSkill() {
           </div>
         </div>
 
-        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5">
+        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
           <h1 className="text-xl font-bold mt-4 p-3 text-center text-pink-300">Hosting Platforms</h1>
           <div className="flex justify-center mt-5">
             <img src="/images/netlify.png" alt="Netlify" className="w-10" />
@@ -63,7 +63,7 @@ function TechSkill() {
           </div>
         </div>
 
-        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5">
+        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
           <h1 className="text-xl font-bold text-center mt-4 p-3 text-center text-purple-400">Database</h1>
           <div className="flex justify-center mt-5 mx-3 mb-3">
             <img src="/images/mongodb.png" className="w-10" alt="MongoDB" />
@@ -71,7 +71,7 @@ function TechSkill() {
           </div>
         </div>
 
-        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5">
+        <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
           <h1 className="text-xl font-bold mt-4 p-3 text-center text-indigo-800">Version Control</h1>
           <div className="flex justify-center mt-5 mb-3">
             <img src="/images/git.png" className="w-10" alt="Git" />
