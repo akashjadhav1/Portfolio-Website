@@ -10,24 +10,30 @@ import Footer from "./components/Footer";
 import TechSkill from "./components/TechSkill";
 
 
+
+
 function App() {
   
 
   return (
     <div className="">
+    
       <Navbar />
       <LandingPage />
       <WebSlider />
       <TechSkill />
       <Projects />
-
-
-
-        <AboutUs />
+      <AboutUs />
+      <Footer />
       
 
-      <Footer />
+    
+    
+    
     </div>
+
+  
+  
   );
 }
 
