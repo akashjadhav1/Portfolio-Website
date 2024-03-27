@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import TechSkill from "./components/TechSkill";
+import ContactUs from "./components/ContactUs";
+
 
 
 
@@ -16,6 +18,7 @@ function App() {
   
 
   return (
+    
     <div className="">
     
       <Navbar />
@@ -24,14 +27,12 @@ function App() {
       <TechSkill />
       <Projects />
       <AboutUs />
+      <ContactUs/>
       <Footer />
-      
-
-    
-    
-    
     </div>
 
+  
+    
   
   
   );

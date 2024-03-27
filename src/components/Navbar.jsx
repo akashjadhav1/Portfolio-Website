@@ -12,6 +12,7 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: "Home" },
     { id: 2, text: "Projects" },
+    {id: 3, text: "ContactUs"},
     { id: 4, text: "About" },
     { id: 5, text: "TechSkills" },
   ];
@@ -20,25 +21,27 @@ const Navbar = () => {
     <div className={`fixed top-0 w-full z-50 ${nav ? 'bg-[#000300]' : ''}`}>
       <div className="bg-gradient-to-r from-black to-fuchsia-700 flex justify-between items-center h-24 max-w-[1275px] mx-auto px-4 text-white">
         {/* Logo */}
-        <img src="/images/ajlogo2.png" alt="aj logo" className="w-24 h-24" />
+        <img src="/images/ajlogo2.png" alt="aj logo" className="lg:w-24 lg:h-24 h-20 w-20" />
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex">
           {navItems.map((item) => (
-            <li
-              key={item.id}
-              className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
-            >
-              <Link
+            <Link
                 to={item.text.toLowerCase()}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={4000}
               >
+            <li
+              key={item.id}
+              className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+            >
+              
                 {item.text}
-              </Link>
+             
             </li>
+            </Link>
           ))}
         </ul>
 
