@@ -33,18 +33,27 @@ function TechSkill() {
 
         <div className="border mb-5 sm:mb-0 sm:mr-5 p-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
           <h1 className="text-xl font-bold p-2 text-center text-green-200">Frameworks</h1>
-          <div className="flex justify-center mt-5">
-            <img src="/images/bootstrap.png" className="w-9" alt="Bootstrap" />
-            <p className="mx-5 font-bold text-gray-500">Bootstrap</p>
+          <div className="flex justify-around mt-5">
+            <img src="/images/bootstrap.png" className="w-8" alt="Bootstrap" />
+            <p className=" font-bold text-gray-500">Bootstrap</p>
           </div>
-          <div className="flex justify-center mt-5">
-            <img src="/images/tailwind.png" className="w-10" alt="Tailwind" />
-            <p className="mx-7 font-bold text-gray-500">Tailwind</p>
+          <div className="flex justify-around mt-5">
+            <img src="/images/tailwind.png" className="w-9" alt="Tailwind" />
+            <p className=" font-bold text-gray-500">Tailwind</p>
           </div>
-          <div className="flex justify-center mt-5">
-            <img src="/images/materialUi.png" alt="Material UI" className="w-9"/>
-            <p className="mx-4 font-bold text-gray-500">Material UI</p>
+          <div className="flex justify-around mt-5">
+            <img src="/images/materialUi.png" alt="Material UI" className="mx-3 w-7"/>
+            <p className="font-bold text-gray-500">Material UI</p>
           </div>
+          <div className="flex justify-around mt-5">
+            <img src="/images/next.png" alt="Material UI" className="w-8 bg-white p-1 rounded"/>
+            <p className=" font-bold text-gray-500">Next Js</p>
+          </div>
+          <div className="flex justify-around mt-5">
+            <img src="/images/nextUI.png" alt="Material UI" className="w-7 bg-white rounded"/>
+            <p className=" font-bold text-gray-500">Next UI</p>
+          </div>
+         
         </div>
 
         <div className="border mb-5 sm:mb-0 sm:mr-5 rounded-xl shadow-sky-500 shadow-2xl m-5 transform transition-transform hover:scale-110 duration-1000 ease-in-out">
