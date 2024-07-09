@@ -40,7 +40,7 @@ function LandingPage() {
         </div>
 
         <div className='flex pt-20'>
-        <a href="https://drive.google.com/file/d/1JHvk74-IY_ojEjZqpU84lAzdujuO8OEQ/view?usp=drive_link"><button type="button" className=" text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transform transition-transform hover:scale-110 duration-500 ease-in-out animate-pulse">Resume</button></a>
+        <a href="https://drive.google.com/file/d/1Om_AnclDY5Sid3DIrUgyX_8lXMN_GE3o/view?usp=sharing"><button type="button" className=" text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transform transition-transform hover:scale-110 duration-500 ease-in-out animate-pulse">Resume</button></a>
         <a href="https://github.com/akashjadhav1"><img src="/images/github.png" className='mx-5 w-10 h-10 shadow-cyan-500 shadow-md rounded-full bg-cyan-100 cursor-pointer transform transition-transform hover:scale-110 duration-500 ease-in-out' alt="git hub img" /></a>
         <a href="https://www.linkedin.com/in/akash-jadhav-751662268"><img src="/images/linkedin.png" className='mx-5 w-10 h-10 shadow-cyan-500 shadow-md rounded-xl bg-cyan-100 cursor-pointer transform transition-transform hover:scale-110 duration-500 ease-in-out' alt="linkedin img" /></a>
         </div>
