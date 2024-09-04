@@ -1,6 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-function AboutUs() {
+const AboutUs = () => {
+  // Define the animation variants
+  const imageVariant = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const textVariant = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
     <>
       <hr />
@@ -9,11 +21,23 @@ function AboutUs() {
           About Us
         </h1>
       </div>
-      <div className="lg:flex lg:justify-around md:flex ">
-        <div className="mx-2 lg:w-1/2">
+      <div className="lg:flex lg:justify-around md:flex">
+        <motion.div
+          variants={imageVariant}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="mx-2 lg:w-1/2"
+        >
           <img src="/images/aboutUs.png" className="" alt="AboutImg" />
-        </div>
-        <div className="flex justify-center items-center lg:w-3/4  mx-1">
+        </motion.div>
+        <motion.div
+          variants={textVariant}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="flex justify-center items-center lg:w-3/4 mx-1"
+        >
           <h1 className="m-4 lg:mx-10 text-xl lg:text-3xl text-gray-400 font-serif">
             <span className="text-orange-500 font-bold font-serif">
               WEB DEVELOPER
@@ -26,18 +50,28 @@ function AboutUs() {
             database management. Eager to contribute technical proficiency and
             creativity to a dynamic development team.
           </h1>
-        </div>
+        </motion.div>
       </div>
       <hr className="" />
 
       <div className="mt-5">
         <div className="flex flex-col md:flex-row justify-around mt-5 items-center">
-          <img
+          <motion.img
+            variants={imageVariant}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             src="/images/webDevelopment.jpg"
             alt="Web Development"
             className="md:w-1/4 rounded-2xl mb-5 shadow-xl shadow-orange-200 transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
-          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif">
+          <motion.p
+            variants={textVariant}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif"
+          >
             <span className="text-2xl font-bold text-orange-300 ">
               WEB DEVELOPMENT
             </span>
@@ -48,12 +82,18 @@ function AboutUs() {
             user interfaces, while Node.js supports server-side operations.
             Databases such as MySQL and MongoDB store data, ensuring responsive
             and dynamic online experiences across various devices.
-          </p>
+          </motion.p>
         </div>
         <hr className="my-5" />
 
         <div className="flex flex-col md:flex-row justify-around mt-10 items-center">
-          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif">
+          <motion.p
+            variants={textVariant}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif"
+          >
             <span className="text-2xl font-bold text-green-300">
               GAME DEVELOPMENT
             </span>
@@ -64,8 +104,12 @@ function AboutUs() {
             gameplay mechanics. Developers often use engines like Unity or
             Unreal to streamline the process. Iterative testing and creativity
             are essential for producing engaging and entertaining games.
-          </p>
-          <img
+          </motion.p>
+          <motion.img
+            variants={imageVariant}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             src="/images/gameDevelopment.jpg"
             alt="Game Development"
             className="md:w-1/4 rounded-2xl mb-5 shadow-purple-500 shadow-xl transform transition-transform hover:scale-110 duration-1000 ease-in-out"
@@ -74,12 +118,22 @@ function AboutUs() {
         <hr className="my-5" />
 
         <div className="flex flex-col md:flex-row justify-around mt-10 items-center">
-          <img
+          <motion.img
+            variants={imageVariant}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             src="/images/ai.jpg"
             alt="Artificial Intelligence"
             className="md:w-1/4 rounded-2xl mb-5 shadow-blue-400 shadow-xl transform transition-transform hover:scale-110 duration-1000 ease-in-out"
           />
-          <p className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif">
+          <motion.p
+            variants={textVariant}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="md:w-1/4 mx-5 mb-5 font-light text-gray-400 text-center md:text-left font-serif"
+          >
             <span className="text-2xl font-bold text-blue-300">
               ARTIFICIAL INTELLIGENCE
             </span>
@@ -90,7 +144,7 @@ function AboutUs() {
             recognize patterns, and make decisions. AI applications range from
             speech recognition and image processing to autonomous vehicles,
             enhancing automation and problem-solving across diverse domains.
-          </p>
+          </motion.p>
         </div>
       </div>
     </>
