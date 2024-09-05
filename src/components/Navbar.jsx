@@ -25,13 +25,14 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex">
-          {navItems.map((item) => (
+          {navItems.map((item,id) => (
             <Link
                 to={item.text.toLowerCase()}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={4000}
+                key={item.id}
               >
             <li
               key={item.id}
