@@ -30,7 +30,43 @@ function Projects() {
         animate={isInView ? "visible" : "hidden"}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5 mx-4 sm:mx-6 lg:mx-[10%]"
       >
-        {/* Project 1 */}
+
+
+      {/* Project 1 */}
+      <motion.div
+          variants={projectVariant}
+          className="rounded-2xl border overflow-hidden m-4 shadow-sky-900 shadow-xl sm:w-full lg:w-full"
+        >
+          <img
+            src="/images/EntertainmentApp.png"
+            alt="Card Img"
+            className="w-full h-56 object-cover"
+          />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Disney Star</div>
+            <p className="text-gray-500 text-base font-serif">
+              A streaming app by Disney, offering a vast library of movies and series from various genres. Enhanced content, family-friendly, and exclusive originals, providing immersive entertainment.
+            </p>
+          </div>
+          <div className="flex justify-around pt-2">
+            <a href="https://ajdisneystar.netlify.app/">
+              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 shadow-sky-800 shadow-lg">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  View Live
+                </span>
+              </button>
+            </a>
+
+            <a href="https://github.com/akashjadhav1/DisneyStar.git">
+              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 shadow-sky-800 shadow-lg">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  View Source Code
+                </span>
+              </button>
+            </a>
+          </div>
+        </motion.div>
+        {/* Project 2 */}
         <motion.div
           variants={projectVariant}
           className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl sm:w-full lg:w-full"
@@ -65,7 +101,7 @@ function Projects() {
           </div>
         </motion.div>
 
-        {/* Project 2 */}
+        {/* Project 3 */}
         <motion.div
           variants={projectVariant}
           className="rounded-2xl border overflow-hidden m-4 shadow-sky-900 shadow-xl sm:w-full lg:w-full"
@@ -100,40 +136,7 @@ function Projects() {
           </div>
         </motion.div>
 
-        {/* Project 3 */}
-        <motion.div
-          variants={projectVariant}
-          className="rounded-2xl border overflow-hidden m-4 shadow-sky-900 shadow-xl sm:w-full lg:w-full"
-        >
-          <img
-            src="/images/EntertainmentApp.png"
-            alt="Card Img"
-            className="w-full h-56 object-cover"
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Disney Star</div>
-            <p className="text-gray-500 text-base font-serif">
-              A streaming app by Disney, offering a vast library of movies and series from various genres. Enhanced content, family-friendly, and exclusive originals, providing immersive entertainment.
-            </p>
-          </div>
-          <div className="flex justify-around pt-2">
-            <a href="https://ajdisneystar.netlify.app/">
-              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 shadow-sky-800 shadow-lg">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  View Live
-                </span>
-              </button>
-            </a>
-
-            <a href="https://github.com/akashjadhav1/DisneyStar.git">
-              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 shadow-sky-800 shadow-lg">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  View Source Code
-                </span>
-              </button>
-            </a>
-          </div>
-        </motion.div>
+        
 
         {/* Project 4 */}
         <motion.div
