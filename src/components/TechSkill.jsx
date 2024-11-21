@@ -42,37 +42,39 @@ function TechSkill() {
         animate={isInView ? "visible" : "hidden"}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5 mx-4 sm:mx-6 lg:mx-[10%]"
       >
-        {/* Tech Skill 1: Scripting Languages */}
-        <motion.div
-          variants={techSkillVariant}
-          className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
-        >
-          <h1 className="text-xl font-bold mt-4 p-3 text-center text-orange-300">
-            Scripting Languages
-          </h1>
-          <div className="px-6 py-4">
-            <div className="flex justify-around items-center">
-              <img src="/images/html.png" alt="HTML" className="w-10" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">HTML</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img src="/images/css.png" alt="CSS" className="w-10" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">CSS</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img src="/images/js.png" alt="JavaScript" className="w-10" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">JavaScript</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img src="/images/react.png" alt="React" className="w-10" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">React</p>
-            </div>
-            <div className="flex justify-around items-center mt-4 mb-4">
-              <img src="/images/redux.png" alt="Redux" className="w-10" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Redux</p>
-            </div>
-          </div>
-        </motion.div>
+       {/* Tech Skill 1: Scripting Languages */}
+{/* Tech Skill 1: Scripting Languages */}
+<motion.div
+  variants={techSkillVariant}
+  className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
+>
+  <h1 className="text-xl font-bold mt-4 p-3 text-center text-orange-300">
+    Scripting Languages
+  </h1>
+  <div className="px-6 py-4">
+    <div className="flex justify-around items-center">
+      <img src="/images/html.png" alt="HTML" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
+      <p className="font-bold mt-2 ml-4 text-gray-500">HTML</p>
+    </div>
+    <div className="flex justify-around items-center mt-4">
+      <img src="/images/css.png" alt="CSS" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
+      <p className="font-bold mt-2 ml-9 text-gray-500">CSS</p>
+    </div>
+    <div className="flex justify-around items-center mt-4">
+      <img src="/images/js.png" alt="JavaScript" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
+      <p className="font-bold mt-2 text-gray-500">JavaScript</p>
+    </div>
+    <div className="flex justify-around items-center mt-4">
+      <img src="/images/react.png" alt="React" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
+      <p className="font-bold mt-2 ml-5 text-gray-500">React</p>
+    </div>
+    <div className="flex justify-around items-center mt-4">
+      <img src="/images/redux.png" alt="Redux" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
+      <p className="font-bold mt-2 ml-4 text-gray-500">Redux</p>
+    </div>
+  </div>
+</motion.div>
+
 
         {/* Tech Skill 2: Frameworks */}
         <motion.div
@@ -84,18 +86,18 @@ function TechSkill() {
           </h1>
           <div className="px-6 py-4">
             <div className="flex justify-around items-center">
-              <img src="/images/bootstrap.png" alt="Bootstrap" className="w-10" />
+              <img src="/images/bootstrap.png" alt="Bootstrap" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
               <p className="font-bold mt-2 ml-4 text-gray-500">Bootstrap</p>
             </div>
             <div className="flex justify-around items-center mt-4">
-              <img src="/images/tailwind.png" alt="Tailwind" className="w-10" />
+              <img src="/images/tailwind.png" alt="Tailwind" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
               <p className="font-bold mt-2 ml-4 text-gray-500">Tailwind</p>
             </div>
             <div className="flex justify-around items-center mt-4">
               <img
                 src="/images/materialUi.png"
                 alt="Material UI"
-                className="w-10"
+                className="mx-2 w-16 h-16 object-contain bg-gray-600 p-2 rounded"
               />
               <p className="font-bold mt-2 ml-4 text-gray-500">Material UI</p>
             </div>
@@ -103,7 +105,7 @@ function TechSkill() {
               <img
                 src="/images/next.png"
                 alt="Next JS"
-                className="w-10 bg-white p-1 rounded"
+                className="w-16 h-16 object-contain bg-gray-600 p-2 rounded"
               />
               <p className="font-bold mt-2 ml-4 text-gray-500">Next JS</p>
             </div>
@@ -111,7 +113,7 @@ function TechSkill() {
               <img
                 src="/images/nextUI.png"
                 alt="Next UI"
-                className="w-10 bg-white rounded"
+                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded"
               />
               <p className="font-bold mt-2 ml-4 text-gray-500">Next UI</p>
             </div>
@@ -128,14 +130,14 @@ function TechSkill() {
           </h1>
           <div className="px-6 py-4">
             <div className="flex justify-around items-center">
-              <img src="/images/netlify.png" alt="Netlify" className="w-10" />
+              <img src="/images/netlify.png" alt="Netlify" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
               <p className="font-bold mt-2 ml-4 text-gray-500">Netlify</p>
             </div>
             <div className="flex justify-around items-center mt-4">
               <img
                 src="/images/github.png"
                 alt="GitHub"
-                className="w-10 bg-sky-100 rounded-full"
+                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded"
               />
               <p className="font-bold mt-2 ml-4 text-gray-500">GitHub</p>
             </div>
@@ -143,7 +145,7 @@ function TechSkill() {
               <img
                 src="/images/vercel.png"
                 alt="Vercel"
-                className="w-10 bg-sky-100 rounded"
+                className="w-16 h-16 object-contain bg-gray-600 p-2 rounded"
               />
               <p className="font-bold mt-2 ml-4 text-gray-500">Vercel</p>
             </div>
@@ -163,20 +165,20 @@ function TechSkill() {
               <img
                 src="/images/nodejs.png"
                 alt="Node.js"
-                className="w-10 bg-gray-100 rounded-lg"
+                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded-lg rounded"
               />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Node.js</p>
+              <p className="font-bold mt-2 ml-6 text-gray-500">Node.js</p>
             </div>
             <div className="flex justify-around items-center mt-4">
               <img
                 src="/images/expressjs.png"
                 alt="Express.js"
-                className="w-10 bg-gray-100 rounded-lg"
+                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded"
               />
               <p className="font-bold mt-2 ml-4 text-gray-500">Express.js</p>
             </div>
             <div className="flex justify-around items-center mt-4 mb-4">
-              <img src="/images/mongodb.png" alt="MongoDB" className="w-10" />
+              <img src="/images/mongodb.png" alt="MongoDB" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
               <p className="font-bold mt-2 ml-4 text-gray-500">MongoDB</p>
             </div>
           </div>
@@ -192,7 +194,7 @@ function TechSkill() {
           </h1>
           <div className="px-6 py-4">
             <div className="flex justify-around items-center mb-4">
-              <img src="/images/git.png" alt="Git" className="w-10" />
+              <img src="/images/git.png" alt="Git" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
               <p className="font-bold mt-2 ml-4 text-gray-500">Git</p>
             </div>
           </div>
