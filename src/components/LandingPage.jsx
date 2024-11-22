@@ -96,7 +96,7 @@ function LandingPage() {
           </motion.div>
 
           <motion.div custom={4} variants={textVariant} className='flex pt-20'>
-            <a href="https://drive.google.com/file/d/1KXJ2QLIvXkyM7q3wEEPlaV9dlvdDlIjf/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1GwWHfkTzXfqpvxJwV-medaTYSZPcUamo/view?usp=sharing">
               <button
                 type="button"
                 className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transform transition-transform hover:scale-110 duration-500 ease-in-out animate-pulse"
