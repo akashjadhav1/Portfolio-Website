@@ -165,7 +165,7 @@ function TechSkill() {
               <img
                 src="/images/nodejs.png"
                 alt="Node.js"
-                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded-lg rounded"
+                className="w-16 h-16 object-contain bg-gray-600 p-2 rounded"
               />
               <p className="font-bold mt-2 ml-6 text-gray-500">Node.js</p>
             </div>
