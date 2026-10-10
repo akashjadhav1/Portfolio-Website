@@ -42,7 +42,7 @@ function ContactUs() {
       id: 4,
       label: 'Phone',
       value: '+91 90226 89218',
-      icon: <FaPhone size={22} />,
+      icon: <FaPhone size={22} className="rotate-180" />,
       iconBg: 'bg-green-500',
       href: 'tel:+919022689218',
     },
@@ -87,7 +87,7 @@ function ContactUs() {
             className="flex items-center gap-4 bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:bg-slate-50 dark:hover:bg-[#273449] transition-colors duration-300"
           >
             <span
-              className={`flex-shrink-0 w-14 h-14 rounded-full ${card.iconBg} flex items-center justify-center text-white`}
+              className={`shrink-0 w-14 h-14 rounded-full ${card.iconBg} flex items-center justify-center text-white`}
             >
               {card.icon}
             </span>
