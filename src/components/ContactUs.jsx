@@ -25,10 +25,10 @@ function ContactUs() {
     {
       id: 2,
       label: 'LinkedIn',
-      value: 'akash-jadhav-751662268',
+      value: 'akash-jadhav-0b03922b4',
       icon: <FaLinkedinIn size={24} />,
       iconBg: 'bg-[#0a66c2]',
-      href: 'https://www.linkedin.com/in/akash-jadhav-751662268',
+      href: 'https://www.linkedin.com/in/akash-jadhav-0b03922b4/',
     },
     {
       id: 3,

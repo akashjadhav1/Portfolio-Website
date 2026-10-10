@@ -108,7 +108,7 @@ function LandingPage() {
                 alt="git hub img"
               />
             </a>
-            <a href="https://www.linkedin.com/in/akash-jadhav-751662268">
+            <a href="https://www.linkedin.com/in/akash-jadhav-0b03922b4/">
               <img
                 src="/images/linkedin.png"
                 className='mx-5 w-10 h-10 shadow-cyan-500 shadow-md rounded-xl bg-cyan-100 cursor-pointer transform transition-transform hover:scale-110 duration-500 ease-in-out'

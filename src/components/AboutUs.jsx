@@ -48,7 +48,7 @@ const AboutUs = () => {
       id: 1,
       icon: <FaLinkedinIn size={22} />,
       text: "LinkedIn",
-      href: "https://www.linkedin.com/in/akash-jadhav-751662268",
+      href: "https://www.linkedin.com/in/akash-jadhav-0b03922b4/",
     },
     {
       id: 2,
