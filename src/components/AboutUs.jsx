@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import { projects } from "./Projects";
 
 const AboutUs = () => {
   // Define the animation variants
@@ -27,7 +28,10 @@ const AboutUs = () => {
     const now = new Date();
     const present = { year: now.getFullYear(), month: now.getMonth() + 1 };
     const totalMonths = experiencePeriods.reduce((sum, period) => {
-      const end = period.end === "present" ? present : period.end;
+      let end = period.end;
+      if (period.end === "present") {
+        end = present;
+      }
       return sum + Math.max(0, monthsBetween(period.start, end));
     }, 0);
     return Math.floor(totalMonths / 12);
@@ -35,7 +39,7 @@ const AboutUs = () => {
 
   const stats = [
     { id: 1, value: `${getTotalYearsExperience()}+`, label: "Years Experience" },
-    { id: 2, value: "10+", label: "Projects Completed" },
+    { id: 2, value: `${projects.length}+`, label: "Projects Completed" },
     { id: 3, value: "15+", label: "Technologies" },
   ];
 

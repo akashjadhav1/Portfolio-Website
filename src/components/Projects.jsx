@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: "Ecoslink And Alammulia",
+// Project data lives at module scope so other sections (e.g. About stats)
+// can derive counts automatically from this single source of truth.
+export const projects = [
+  {
+    id: 1,
+    title: "Ecoslink And Alammulia",
       img: "/images/ecoslinkAdmin.png",
       description:
         "ERP system admin panel covering CRM, costing, purchase orders, inventory, invoicing, project management, and scheduling. Built with React, TypeScript, Vite, Redux Toolkit, React Query, TanStack Table, Radix UI, and Tiptap, with Chart.js and Recharts analytics dashboards.",
@@ -60,8 +61,9 @@ function Projects() {
       live: "https://admin.disruptive-doctors.com/login",
     },
   
-  ];
+];
 
+function Projects() {
   // Animation variants for the container
   const containerVariant = {
     hidden: {},
