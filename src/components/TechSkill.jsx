@@ -1,204 +1,134 @@
 import React from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiJquery,
+  SiWebpack,
+  SiBabel,
+  SiEslint,
+  SiPrettier,
+} from "react-icons/si";
 
 function TechSkill() {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref);
-
   // Animation variants for the container
   const containerVariant = {
-    hidden: { opacity: 0, scale: 0.9 },
+    hidden: {},
     visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { staggerChildren: 0.3 },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
   // Animation variants for each tech skill item
   const techSkillVariant = {
-    hidden: { opacity: 0, y: 20, scale: 0.9 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      scale: 1,
       transition: { duration: 0.6 },
     },
   };
 
-  return (
-    <div className="mt-7">
-      <h1
-        className="text-4xl font-bold text-center text-yellow-200"
-        id="techskills"
-      >
-        TECH SKILLS
-      </h1>
+  const skillCategories = [
+    {
+      id: 1,
+      title: "Frontend",
+      skills: [
+        { name: "HTML", img: "/images/html.png" },
+        { name: "CSS", img: "/images/css.png" },
+        { name: "JavaScript", img: "/images/js.png" },
+        { name: "React", img: "/images/react.png" },
+        { name: "Next JS", img: "/images/next.png" },
+        { name: "Bootstrap", img: "/images/bootstrap.png" },
+      ],
+    },
+    {
+      id: 2,
+      title: "Frameworks & Libraries",
+      skills: [
+        { name: "Redux", icon: <SiRedux size={44} color="#764abc" /> },
+        { name: "Material-UI", img: "/images/materialUi.png" },
+        { name: "Tailwind CSS", icon: <SiTailwindcss size={44} color="#06b6d4" /> },
+        { name: "jQuery", icon: <SiJquery size={44} color="#0769ad" /> },
+        { name: "Webpack", icon: <SiWebpack size={44} color="#1c78c0" /> },
+        { name: "Babel", icon: <SiBabel size={44} color="#f9dc3e" /> },
+        { name: "ESLint", icon: <SiEslint size={44} color="#4b32c3" /> },
+        { name: "Prettier", icon: <SiPrettier size={44} color="#56b3b4" /> },
+      ],
+    },
+    {
+      id: 3,
+      title: "Backend",
+      skills: [
+        { name: "Node.js", img: "/images/nodejs.png" },
+        { name: "Express.js", img: "/images/expressjs.png" },
+        { name: "MongoDB", img: "/images/mongodb.png" },
+      ],
+    },
+    {
+      id: 4,
+      title: "Tools & Others",
+      skills: [
+        { name: "Git", img: "/images/git.png" },
+        { name: "GitHub", img: "/images/github.png" },
+        { name: "Netlify", img: "/images/netlify.png" },
+        { name: "Vercel", img: "/images/vercel.png" },
+        { name: "Next UI", img: "/images/nextUI.png" },
+      ],
+    },
+  ];
 
+  return (
+    <div id="techskills" className="bg-slate-100 dark:bg-[#0f172a] py-16 px-5">
+      {/* Heading */}
+      <div className="text-center mb-14">
+        <h1 className="font-bold text-4xl md:text-5xl inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+          Skills &amp; Technologies
+        </h1>
+        <div className="w-24 h-1 mx-auto mt-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+      </div>
+
+      {/* Category Cards */}
       <motion.div
-        ref={ref}
         variants={containerVariant}
         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5 mx-4 sm:mx-6 lg:mx-[10%]"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.15 }}
+        className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
       >
-       {/* Tech Skill 1: Scripting Languages */}
-{/* Tech Skill 1: Scripting Languages */}
-<motion.div
-  variants={techSkillVariant}
-  className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
->
-  <h1 className="text-xl font-bold mt-4 p-3 text-center text-orange-300">
-    Scripting Languages
-  </h1>
-  <div className="px-6 py-4">
-    <div className="flex justify-around items-center">
-      <img src="/images/html.png" alt="HTML" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-      <p className="font-bold mt-2 ml-4 text-gray-500">HTML</p>
-    </div>
-    <div className="flex justify-around items-center mt-4">
-      <img src="/images/css.png" alt="CSS" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-      <p className="font-bold mt-2 ml-9 text-gray-500">CSS</p>
-    </div>
-    <div className="flex justify-around items-center mt-4">
-      <img src="/images/js.png" alt="JavaScript" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-      <p className="font-bold mt-2 text-gray-500">JavaScript</p>
-    </div>
-    <div className="flex justify-around items-center mt-4">
-      <img src="/images/react.png" alt="React" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-      <p className="font-bold mt-2 ml-5 text-gray-500">React</p>
-    </div>
-    <div className="flex justify-around items-center mt-4">
-      <img src="/images/redux.png" alt="Redux" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-      <p className="font-bold mt-2 ml-4 text-gray-500">Redux</p>
-    </div>
-  </div>
-</motion.div>
+        {skillCategories.map((category) => (
+          <motion.div
+            key={category.id}
+            variants={techSkillVariant}
+            className="bg-white dark:bg-[#1e293b] rounded-2xl border border-gray-200 dark:border-gray-700 p-6"
+          >
+            <h2 className="text-2xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-6">
+              {category.title}
+            </h2>
 
-
-        {/* Tech Skill 2: Frameworks */}
-        <motion.div
-          variants={techSkillVariant}
-          className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
-        >
-          <h1 className="text-xl font-bold mt-4 p-3 text-center text-green-200">
-            Frameworks
-          </h1>
-          <div className="px-6 py-4">
-            <div className="flex justify-around items-center">
-              <img src="/images/bootstrap.png" alt="Bootstrap" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Bootstrap</p>
+            <div className="grid grid-cols-2 gap-4">
+              {category.skills.map((skill) => (
+                <div
+                  key={skill.name}
+                  className="bg-slate-200 dark:bg-[#334155] rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-gray-200 dark:border-gray-700 transform transition-transform hover:scale-105 hover:bg-indigo-600/30 duration-300"
+                >
+                  {skill.icon ? (
+                    skill.icon
+                  ) : (
+                    <img
+                      src={skill.img}
+                      alt={skill.name}
+                      className="w-14 h-14 object-contain"
+                    />
+                  )}
+                  <p className="text-gray-700 dark:text-gray-300 font-medium text-center">
+                    {skill.name}
+                  </p>
+                </div>
+              ))}
             </div>
-            <div className="flex justify-around items-center mt-4">
-              <img src="/images/tailwind.png" alt="Tailwind" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Tailwind</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img
-                src="/images/materialUi.png"
-                alt="Material UI"
-                className="mx-2 w-16 h-16 object-contain bg-gray-600 p-2 rounded"
-              />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Material UI</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img
-                src="/images/next.png"
-                alt="Next JS"
-                className="w-16 h-16 object-contain bg-gray-600 p-2 rounded"
-              />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Next JS</p>
-            </div>
-            <div className="flex justify-around items-center mt-4 mb-4">
-              <img
-                src="/images/nextUI.png"
-                alt="Next UI"
-                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded"
-              />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Next UI</p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Tech Skill 3: Hosting Platforms */}
-        <motion.div
-          variants={techSkillVariant}
-          className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
-        >
-          <h1 className="text-xl font-bold mt-4 p-3 text-center text-pink-300">
-            Hosting Platforms
-          </h1>
-          <div className="px-6 py-4">
-            <div className="flex justify-around items-center">
-              <img src="/images/netlify.png" alt="Netlify" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Netlify</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img
-                src="/images/github.png"
-                alt="GitHub"
-                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded"
-              />
-              <p className="font-bold mt-2 ml-4 text-gray-500">GitHub</p>
-            </div>
-            <div className="flex justify-around items-center mt-4 mb-4">
-              <img
-                src="/images/vercel.png"
-                alt="Vercel"
-                className="w-16 h-16 object-contain bg-gray-600 p-2 rounded"
-              />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Vercel</p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Tech Skill 4: Backend */}
-        <motion.div
-          variants={techSkillVariant}
-          className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
-        >
-          <h1 className="text-xl font-bold mt-4 p-3 text-center text-indigo-800">
-            Backend
-          </h1>
-          <div className="px-6 py-4">
-            <div className="flex justify-around items-center">
-              <img
-                src="/images/nodejs.png"
-                alt="Node.js"
-                className="w-16 h-16 object-contain bg-gray-600 p-2 rounded"
-              />
-              <p className="font-bold mt-2 ml-6 text-gray-500">Node.js</p>
-            </div>
-            <div className="flex justify-around items-center mt-4">
-              <img
-                src="/images/expressjs.png"
-                alt="Express.js"
-                className="w-16 h-16 object-contain bg-gray-600 p-2  rounded"
-              />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Express.js</p>
-            </div>
-            <div className="flex justify-around items-center mt-4 mb-4">
-              <img src="/images/mongodb.png" alt="MongoDB" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">MongoDB</p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Tech Skill 5: Version Control */}
-        <motion.div
-          variants={techSkillVariant}
-          className="rounded-2xl overflow-hidden m-4 border shadow-blue-900 shadow-xl"
-        >
-          <h1 className="text-xl font-bold mt-4 p-3 text-center text-purple-400">
-            Version Control
-          </h1>
-          <div className="px-6 py-4">
-            <div className="flex justify-around items-center mb-4">
-              <img src="/images/git.png" alt="Git" className="w-16 h-16 object-contain bg-gray-600 p-2 rounded" />
-              <p className="font-bold mt-2 ml-4 text-gray-500">Git</p>
-            </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );

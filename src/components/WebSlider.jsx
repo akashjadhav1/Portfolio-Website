@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 
 
@@ -52,24 +53,36 @@ function WebSlider() {
   };
 
   return (
-    <>
-      <div className="text-center text-3xl font-bold mt-3">
-        <h1 className="text-pink-300">TOP TECHNOLOGY</h1>
-      </div>
-      <div className="h-2/4 mt-5 rounded m-10">
+    <div className="bg-slate-100 dark:bg-[#0f172a] py-12 px-4 sm:px-10">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="text-center text-3xl font-bold mb-8"
+      >
+        <h1 className="text-pink-600 dark:text-pink-300">TOP TECHNOLOGY</h1>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+        className="tech-slider max-w-[1100px] mx-auto"
+      >
         <Slider {...settings}>
           {imageArr.map((image, index) => (
-            <div className="mt-4" key={index}>
+            <div key={index} className="px-3 py-2">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-32 h-32 bg-white rounded shadow-indigo-700 shadow-2xl object-contain mx-auto"
+                className="w-28 h-28 sm:w-32 sm:h-32 bg-white rounded-xl border border-gray-200 dark:border-gray-700 p-2 shadow-lg shadow-indigo-500/20 object-contain mx-auto transform transition-transform hover:scale-110 duration-300"
               />
             </div>
           ))}
         </Slider>
-      </div>
-    </>
+      </motion.div>
+    </div>
   );
 }
 

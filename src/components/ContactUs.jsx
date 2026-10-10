@@ -1,91 +1,108 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 function ContactUs() {
-  // Animation variants with zoom-in effect
-  const fadeInUpZoom = {
-    hidden: { opacity: 0, y: 20, scale: 0.9 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } },
+  const containerVariant = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.15 } },
   };
 
-  return (
-    <div>
-      <hr />
-      <section id="contactus" className="bg-dark">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <motion.h2
-            variants={fadeInUpZoom}
-            initial="hidden"
-            animate="visible"
-            className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
-          >
-            Contact Us
-          </motion.h2>
+  const itemVariant = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
 
-          <motion.form
-            variants={fadeInUpZoom}
-            initial="hidden"
-            animate="visible"
-            className="space-y-8"
+  const contactCards = [
+    {
+      id: 1,
+      label: 'GitHub',
+      value: 'akashjadhav1',
+      icon: <FaGithub size={24} />,
+      iconBg: 'bg-slate-700',
+      href: 'https://github.com/akashjadhav1',
+    },
+    {
+      id: 2,
+      label: 'LinkedIn',
+      value: 'akash-jadhav-751662268',
+      icon: <FaLinkedinIn size={24} />,
+      iconBg: 'bg-[#0a66c2]',
+      href: 'https://www.linkedin.com/in/akash-jadhav-751662268',
+    },
+    {
+      id: 3,
+      label: 'Email',
+      value: 'akashjadhav5975@gmail.com',
+      icon: <FaEnvelope size={22} />,
+      iconBg: 'bg-red-500',
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=akashjadhav5975@gmail.com',
+    },
+    {
+      id: 4,
+      label: 'Phone',
+      value: '+91 90226 89218',
+      icon: <FaPhone size={22} />,
+      iconBg: 'bg-green-500',
+      href: 'tel:+919022689218',
+    },
+  ];
+
+  return (
+    <section id="contactus" className="bg-slate-100 dark:bg-[#0f172a] py-16 px-5">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h1 className="font-bold text-4xl md:text-5xl inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+          Get In Touch
+        </h1>
+        <div className="w-24 h-1 mx-auto mt-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+      </div>
+
+      {/* Intro */}
+      <div className="text-center max-w-2xl mx-auto mb-14">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+          Let's work together!
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+          I'm always open to discussing new opportunities, interesting
+          projects, or just having a chat about technology.
+        </p>
+      </div>
+
+      {/* Contact Cards */}
+      <motion.div
+        variants={containerVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6"
+      >
+        {contactCards.map((card) => (
+          <motion.a
+            key={card.id}
+            variants={itemVariant}
+            href={card.href}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-4 bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:bg-slate-50 dark:hover:bg-[#273449] transition-colors duration-300"
           >
-            <div>
-              <label
-                htmlFor="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Your Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="name@gmail.com"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="subject"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="Let us know how we can help you"
-                required
-              />
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="6"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Leave a comment..."
-              ></textarea>
-            </div>
-            <motion.button
-              variants={fadeInUpZoom}
-              initial="hidden"
-              animate="visible"
-              type="submit"
-              onClick={() => window.location.reload()}
-              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-500 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-500"
+            <span
+              className={`flex-shrink-0 w-14 h-14 rounded-full ${card.iconBg} flex items-center justify-center text-white`}
             >
-              Send message
-            </motion.button>
-          </motion.form>
-        </div>
-      </section>
-    </div>
+              {card.icon}
+            </span>
+            <div className="min-w-0">
+              <p className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                {card.label}
+              </p>
+              <p className="text-slate-900 dark:text-white font-semibold break-words">
+                {card.value}
+              </p>
+            </div>
+          </motion.a>
+        ))}
+      </motion.div>
+    </section>
   );
 }
 

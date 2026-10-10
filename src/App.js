@@ -8,7 +8,10 @@ import Projects from "./components/Projects";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import TechSkill from "./components/TechSkill";
+import Experience from "./components/Experience";
 import ContactUs from "./components/ContactUs";
+import ScrollToTop from "./components/ScrollToTop";
+import GitHubStats from "./components/GitHubStats";
 
 
 
@@ -25,10 +28,13 @@ function App() {
       <LandingPage />
       <WebSlider />
       <TechSkill />
+      <Experience />
       <Projects />
+      <GitHubStats />
       <AboutUs />
       <ContactUs/>
       <Footer />
+      <ScrollToTop />
     </div>
 
   

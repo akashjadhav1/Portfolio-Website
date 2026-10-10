@@ -1,6 +1,11 @@
 body{
+    background-color: #f1f5f9;
+    color: #0f172a;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+html.dark body{
     background-color: rgb(19, 18, 18);
-    color:white;
+    color: white;
 }
 .bg1{
     background-image: url(".././public/images/bg2.jpg");
@@ -14,3 +19,46 @@ body{
         height: 750px;
     }
   }
+
+/* Tech slider (react-slick) arrows + dots */
+.tech-slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: #4f46e5;
+    transition: background-color 0.2s ease;
+}
+.tech-slider .slick-arrow:hover {
+    background-color: #4338ca;
+}
+.tech-slider .slick-arrow:before {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 1;
+}
+.tech-slider .slick-prev {
+    left: -8px;
+}
+.tech-slider .slick-next {
+    right: -8px;
+}
+.tech-slider .slick-arrow.slick-disabled {
+    opacity: 0.35;
+}
+html.dark .tech-slider .slick-arrow {
+    background-color: #4f46e5;
+}
+html.dark .tech-slider .slick-arrow:hover {
+    background-color: #6366f1;
+}
+
+.tech-slider .slick-dots li button:before {
+    color: #4f46e5;
+}
+.tech-slider .slick-dots li.slick-active button:before {
+    color: #4f46e5;
+}
